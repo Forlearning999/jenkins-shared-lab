@@ -1,11 +1,6 @@
-def call(String repoUrl, String branch = "main") {
+def call(String repoUrl, String branch) {
 
     echo "Cloning repository: ${repoUrl}"
     echo "Branch: ${branch}"
-
-    git(
-        branch: branch,
-        url: repoUrl
-    )
 
 }
